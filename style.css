@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-red: hsl(0, 100%, 74%);
+    --primary-green: hsl(154, 59%, 51%);
+    --accent-blue: hsl(248, 32%, 49%);
+    --neutral-dark-blue: hsl(249, 10%, 26%);
+    --neutral-gray-blue: hsl(246, 25%, 77%);
+}
+
+body {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins';
+    background-color: var(--primary-red);
+    background-image: url(./img/bg-intro-mobile.png);
+}
+
+.text {
+    color: white;
+}
+
+h1 {
+    margin-top: 2.5em;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.description {
+    margin: 1em;
+    font-weight: 400;
+    line-height: 1.7em;
+    margin-bottom: 4.5em;
+}
+
+.btn {
+    background-color: var(--accent-blue);
+    color: white;
+    border-radius: 7px;
+    margin: 0.9em;
+    margin-bottom: 1.5em;
+    padding: 0.3em;
+    font-weight: 300;
+    -webkit-box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2); 
+box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-text {
+    width: 50vw;
+    margin-left: 4em;
+}
+
+.try {
+    font-weight: 700;
+}
+
+.inputs {
+    background-color: white;
+    border-radius: 7px;
+    margin: 0.8em;
+    padding: 1em;
+    -webkit-box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    border: 0.5px var(--neutral-gray-blue) solid;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 1.5em;
+    margin: 0.6em;
+    width: 65vw;
+}
+
+.claim {
+    background-color: var(--primary-green);
+    color: white;
+    border: 0px;
+    padding: 1.2em;
+    border-radius: 5px;
+    width: 76vw;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 0.6em;
+    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.2); 
+box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.disclaimer {
+    color: var(--neutral-gray-blue);
+    margin-left: 3em;
+    line-height: 2em;
+    width: 60vw;
+    font-size: 10px;
+}
+
+.terms {
+    font-weight: 700;
+    color: var(--primary-red);
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: var(--primary-green);
+}
+
+.form-control.error input {
+	border-color: var(--primary-red);
+}
+
+.form-control object {
+    display: none;
+}
+
+#object-firstName {
+    position: absolute;
+    bottom: 435px;
+    right: 60px;
+}
+
+#object-lastName {
+    position: absolute;
+    bottom: 340px;
+    right: 60px;
+}
+
+#object-email {
+    position: absolute;
+    bottom: 240px;
+    right: 60px;
+}
+#object-password {
+    position: absolute;
+    bottom: 143px;
+    right: 60px;
+}
+
+.form-control.error object {
+    display: inline;
+}
+
+.form-control small {
+    display: none;
+    margin-left: 8rem;
+    font-size: 11px;
+    color: var(--primary-red);
+}
+
+.form-control.error small {
+    display: inline;
+}
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .text {
+        margin-left: 10em;
+        margin-top: 9em;
+        text-align: left;
+    }
+    h1 {
+        width: 30vw;
+        letter-spacing: 2.5px;
+        font-size: 2.5em;
+        line-height: 1.25em;
+    }
+    .description {
+        margin: 0;
+        width: 35vw;
+    }
+    .inputs {
+        width: 40vw;
+        padding-top: 2em;
+        padding-bottom: 1.5em;
+    }
+    input {
+        width: 35vw;
+        margin-bottom: 1em;
+    }
+    .btn {
+        margin-top: 3em;
+        width: 41.5vw;
+    }
+    .btn-text {
+        margin-left: 0em;
+        width: auto;
+    }
+    .claim {
+        width: 38vw;
+    }
+    .disclaimer {
+        width: auto;
+    }
+    .form-control.error object {
+        position: absolute;
+        right: 150px;
+    }
+    .form-control.error small {
+        font-size: 0.9em;
+        margin-left: 25em;
+    }
+    #object-firstName {
+        position: absolute;
+        top: 200px;
+        right: 140px;
+    }
+    
+    #object-lastName {
+        position: absolute;
+        top: 305px;
+        right: 140px;
+    }
+    
+    #object-email {
+        position: absolute;
+        top: 406.5px;
+        right: 140px;
+    }
+    #object-password {
+        position: absolute;
+        top: 510px;
+        right: 140px;
+    }
+}
